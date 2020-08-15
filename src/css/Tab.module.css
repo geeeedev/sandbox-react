@@ -1,0 +1,14 @@
+.label {
+  padding: 5px;
+  border: 1px solid gray;
+  margin: 0px;
+}
+
+.div {
+  height: 100px;
+  width: 300px;
+  border: 2px solid gray;
+  margin-left: 42.5%;
+  margin-top: 10px;
+  outline: 2px solid orange;
+}

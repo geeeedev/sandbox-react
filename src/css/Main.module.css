@@ -1,0 +1,7 @@
+.block{
+    background-color: salmon;
+    height: 600px;
+    width: 70%;
+    padding: 20px;
+    display: inline-block;
+}

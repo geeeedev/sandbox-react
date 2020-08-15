@@ -1,0 +1,9 @@
+.block{
+    background-color: gold;
+    height: 500px;
+    width: 31.5%;
+    margin-right: 19px;
+    margin-bottom: 20px;
+    display: inline-block;
+    
+}
