@@ -18,7 +18,7 @@ import Wrapper from "./compNavBar/Wrapper";
 import NavBar from "./compNavBar/NavBar";
 import FormWrapper1 from "./compNavBar/FormWrapper1";
 
-import Map from "./compGoogleMapAPI/GMap";
+import GMap from "./compGoogleMapAPI/GMap";
 
 function App() {
   const [currMsg, setCurrMsg] = useState(""); //lifting states to be shared in 2 child components
@@ -27,7 +27,7 @@ function App() {
   const tabs = ["Tab1", "Tab 2", "Tab3", "Tab 4", "Tab5"];
 
   const loc = {
-    address: 'CA, 90755',
+    address: 'Hello Universal Studio, Universal City',
     lat: 34.1384534,
     lng: -118.3552366
   }
@@ -50,7 +50,7 @@ function App() {
           <FormWrapper1 />
       </Wrapper>
       <hr />
-      <Map location={loc} zoom={18} />
+      <GMap location={loc} zoom={18} />
     </div>
   );
 }
