@@ -12,19 +12,25 @@ import MessageDisplay from "./compMsgFrmDsply/MessageDisplay";
 
 import Tab from "./compTabs/Tab";
 
-
 import Wrapper from "./compNavBar/Wrapper";
 //if combined the two (context & wrapper) must import with { } to grab all
 // import { Wrapper, NavBarContext } from "./compNavBar/Wrapper";  
 import NavBar from "./compNavBar/NavBar";
 import FormWrapper1 from "./compNavBar/FormWrapper1";
 
+import Map from "./compGoogleMapAPI/GMap";
 
 function App() {
   const [currMsg, setCurrMsg] = useState(""); //lifting states to be shared in 2 child components
   // console.log(`app currMsg: ${currMsg}`);
 
   const tabs = ["Tab1", "Tab 2", "Tab3", "Tab 4", "Tab5"];
+
+  const loc = {
+    address: 'CA, 90755',
+    lat: 34.1384534,
+    lng: -118.3552366
+  }
 
   return (
     <div className="App">
@@ -43,7 +49,8 @@ function App() {
           <NavBar />
           <FormWrapper1 />
       </Wrapper>
-      
+      <hr />
+      <Map location={loc} zoom={18} />
     </div>
   );
 }

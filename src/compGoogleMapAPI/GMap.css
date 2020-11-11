@@ -1,0 +1,8 @@
+.google-map {
+    height: 700px;
+    width: 700px;
+    padding: 0px;
+    margin: 5% 27%;
+    align-items: center;
+    /* outline: 1px dotted rgb(43, 255, 0); */
+}
