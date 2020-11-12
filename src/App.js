@@ -18,7 +18,7 @@ import Wrapper from "./compNavBar/Wrapper";
 import NavBar from "./compNavBar/NavBar";
 import FormWrapper1 from "./compNavBar/FormWrapper1";
 
-import GMap from "./compGoogleMapAPI/GMap";
+import GMap from "./compGMapAPISimple/GMap";
 
 function App() {
   const [currMsg, setCurrMsg] = useState(""); //lifting states to be shared in 2 child components
