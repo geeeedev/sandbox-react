@@ -27,10 +27,12 @@ function App() {
   const tabs = ["Tab1", "Tab 2", "Tab3", "Tab 4", "Tab5"];
 
   const loc = {
-    address: 'Hello Universal Studio, Universal City',
-    lat: 34.1384534,
-    lng: -118.3552366
+    address: 'Snowy Big Bear!',
+    zoom: 13,
+    lat: 34.2448006,
+    lng: -116.9201695,
   }
+
 
   return (
     <div className="App">
@@ -50,7 +52,7 @@ function App() {
           <FormWrapper1 />
       </Wrapper>
       <hr />
-      <GMap location={loc} zoom={18} />
+      <GMap location={loc}  />
     </div>
   );
 }
