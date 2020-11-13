@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 
 import Hello from "./compOther/Hello";
@@ -19,6 +19,8 @@ import NavBar from "./compNavBar/NavBar";
 import FormWrapper1 from "./compNavBar/FormWrapper1";
 
 import GMap from "./compGMapAPISimple/GMap";
+
+import SocialMediaIcon from "./compSocialIcons/SocialIcons";
 
 function App() {
   const [currMsg, setCurrMsg] = useState(""); //lifting states to be shared in 2 child components
@@ -52,8 +54,13 @@ function App() {
           <FormWrapper1 />
       </Wrapper>
       <hr />
-      <GMap location={loc}  />
+      {/* <GMap location={loc}  /> */}
+      {/* works, just turning it off for now */}
+      <hr />
+      <SocialMediaIcon />
+      <hr />
     </div>
+    
   );
 }
 export default App;
