@@ -1,12 +1,12 @@
 import React from "react";
 //npm i react-animated-social-icons
-//npm install @emotion/core @emotion/styled
+//npm install @emotion/core @emotion/styled @emotion/react
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 import styles from "../css/SocialIcons.module.css";
 
 const Icon = () => {
   return (
-    <div className={styles.footerIcon}>
+    <div className={styles.footerIcon, styles.debugOutline}>
       <AnimatedSocialIcon
         brandName="github"
         url="https://github.com/geeeedev"

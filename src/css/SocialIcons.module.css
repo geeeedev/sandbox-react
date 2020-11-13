@@ -3,7 +3,11 @@
     flex-direction: row;
     align-items: center;
     height: 100px;
-    width: 800px;
-    /* outline: 1px dashed blue; */
+    width: 300px;
     margin-left: 40%;
+    outline: 3px dotted red;
 }
+
+/* .debugOutline {
+    outline: 1px dashed olive;
+} */
