@@ -1,7 +1,8 @@
 .footerIcon {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;  /* vertical align */
+    /* justify-content: space-between;  horizontal align */
     height: 100px;
     width: 300px;
     margin-left: 40%;
