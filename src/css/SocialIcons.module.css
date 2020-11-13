@@ -1,0 +1,9 @@
+.footerIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    width: 800px;
+    /* outline: 1px dashed blue; */
+    margin-left: 40%;
+}
