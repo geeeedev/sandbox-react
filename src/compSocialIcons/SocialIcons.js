@@ -1,6 +1,6 @@
 import React from "react";
-//npm i react-animated-social-icons
 //npm install @emotion/core @emotion/styled @emotion/react
+//npm i react-animated-social-icons
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 import styles from "../css/SocialIcons.module.css";
 
