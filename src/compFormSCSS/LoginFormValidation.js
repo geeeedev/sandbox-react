@@ -56,7 +56,7 @@ const LoginForm = () => {
       </form>
 
       <LoginDisplay data={newLogin} />
-    </>
+    </> 
   );
 };
 

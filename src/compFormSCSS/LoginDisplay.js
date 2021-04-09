@@ -1,6 +1,5 @@
 import React from "react";
 
-// const LoginDisplay = ({username, email, password, cfmPswd}) => {
 const LoginDisplay = (props) => {
     const {username, email, password, cfmPswd} = props.data;
 
