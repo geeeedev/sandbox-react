@@ -7,11 +7,52 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [cfmPswd, setCfmPswd] = useState("");
 
+  const [errUsername, setErrUsername] = useState("");
+  const [errEmail, setErrEmail] = useState("");
+  const [errPassword, setErrPassword] = useState("");
+  const [errCfmPswd, setErrCfmPswd] = useState("");
+
   const newLogin = {
     username,
     email,
     password,
     cfmPswd,
+  };
+
+  const updateUsername = (e) => {
+    setUsername(e.target.value);
+    if (e.target.value.length < 3) {
+      setErrUsername("Username must be at least 3 characters.");
+    } else {
+      setErrUsername("");
+    }
+  };
+
+  const updateEmail = (e) => {
+    setEmail(e.target.value);
+    if (!e.target.value.includes("@")) {
+      setErrEmail("Email must be in email format.");
+    } else {
+      setErrEmail("");
+    }
+  };
+
+  const updatePassword = (e) => {
+    setPassword(e.target.value);
+    if (e.target.value.length < 8) {
+      setErrPassword("Password must be at least 8 characters.");
+    } else {
+      setErrPassword("");
+    }
+  };
+
+  const updateCfmPswd = (e) => {
+    setCfmPswd(e.target.value);
+    if (e.target.value !== password) {
+      setErrCfmPswd("Password Confirmation must match Password.");
+    } else {
+      setErrCfmPswd("");
+    }
   };
 
   return (
@@ -23,8 +64,10 @@ const LoginForm = () => {
             id="username"
             name="username"
             type="text"
-            onChange={(e) => setUsername(e.target.value)}
+            // onChange={(e)=>setUsername(e.target.value)}
+            onChange={updateUsername}
           />
+          {errUsername ? <span>{errUsername}</span> : ""}
         </div>
         <div>
           <label htmlFor="email">Email:</label>
@@ -32,8 +75,9 @@ const LoginForm = () => {
             id="email"
             name="email"
             type="email"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => updateEmail(e)}
           />
+          {errEmail ? <span>{errEmail}</span> : ""}
         </div>
         <div>
           <label htmlFor="password">Password:</label>
@@ -41,22 +85,24 @@ const LoginForm = () => {
             id="password"
             name="password"
             type="password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={updatePassword}
           />
+          {errPassword ? <span>{errPassword}</span> : ""}
         </div>
         <div>
-          <label htmlFor="cfmPswd">Confirmed Password:</label>
+          <label htmlFor="cfmPswd">Confirm Password:</label>
           <input
             id="cfmPswd"
             name="cfmPswd"
             type="password"
-            onChange={(e) => setCfmPswd(e.target.value)}
+            onChange={updateCfmPswd}
           />
+          {errCfmPswd ? <span>{errCfmPswd}</span> : ""}
         </div>
       </form>
 
       <LoginDisplay data={newLogin} />
-    </> 
+    </>
   );
 };
 
