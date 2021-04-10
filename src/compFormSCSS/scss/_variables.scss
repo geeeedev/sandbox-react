@@ -1,0 +1,11 @@
+$greyBlue: rgba(48, 64, 150, 0.829); //#61dafb;
+$brown: rgb(148, 74, 74);
+$centerAlign: center;
+
+
+// import variables file in other scss files import section:
+// @use "variables" as v;
+// @use "filePath/scssPartialFilenameWithout_Underscore";
+
+//apply variables in other scss files:
+// color: v.$reactBlueColor;

@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+
+// $greyBlue: rgb(46, 46, 134); //#61dafb;
+// $brown: brown;
+// $centerAlign: center;
+
+form{
+  text-align: v.$centerAlign;
+  align-items: v.$centerAlign;
+  padding: 20px;
+  color: v.$greyBlue;
+  /* outline: 2px dotted blueviolet; */
+}
+  
+  
+.display{
+  color: v.$brown;
+  text-align: v.$centerAlign;
+}

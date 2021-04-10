@@ -1,0 +1,14 @@
+form {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: rgba(48, 64, 150, 0.829);
+  /* outline: 2px dotted blueviolet; */
+}
+
+.display {
+  color: #944a4a;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Login.css.map */
