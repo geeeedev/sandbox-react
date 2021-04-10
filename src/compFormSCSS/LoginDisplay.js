@@ -1,10 +1,11 @@
 import React from "react";
+import "./css/Login.css"
 
 const LoginDisplay = (props) => {
     const {username, email, password, cfmPswd} = props.data;
 
     return (
-        <div>
+        <div className="display">
           <p>Entry Confirmation</p>
           <hr />
           <p>Username: {username}</p>
