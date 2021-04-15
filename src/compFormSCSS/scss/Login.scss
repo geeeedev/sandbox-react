@@ -1,5 +1,5 @@
-//compile scss to css
-//sass sourcePath/sourceFile.scss targetPath/targetFile.css
+//compile scss:
+//sass ./src/compFormSCSS/scss/Login.scss ./src/compFormSCSS/css/Login.css --watch
 
 
 @use "variables" as v;
@@ -12,6 +12,7 @@ form{
   align-items: v.$centerAlign;
   padding: 20px;
   color: v.$greyBlue;
+  border: 1px solid v.$greyBlue;
   /* outline: 2px dotted blueviolet; */
 }
   
@@ -20,4 +21,9 @@ form{
   color: v.$brown;
   font-weight: bold;
   text-align: v.$centerAlign;
+}
+
+.errWarning{
+  color: v.$redWarning;
+  font-size: small;
 }

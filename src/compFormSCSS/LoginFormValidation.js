@@ -68,7 +68,7 @@ const LoginForm = () => {
             // onChange={(e)=>setUsername(e.target.value)}
             onChange={updateUsername}
           />
-          {errUsername ? <span>{errUsername}</span> : ""}
+          {errUsername ? <span className="errWarning">{errUsername}</span> : ""}
         </div>
         <div>
           <label htmlFor="email">Email:</label>
@@ -78,7 +78,7 @@ const LoginForm = () => {
             type="email"
             onChange={(e) => updateEmail(e)}
           />
-          {errEmail ? <span>{errEmail}</span> : ""}
+          {errEmail ? <span className="errWarning">{errEmail}</span> : ""}
         </div>
         <div>
           <label htmlFor="password">Password:</label>
@@ -88,7 +88,7 @@ const LoginForm = () => {
             type="password"
             onChange={updatePassword}
           />
-          {errPassword ? <span>{errPassword}</span> : ""}
+          {errPassword ? <span className="errWarning">{errPassword}</span> : ""}
         </div>
         <div>
           <label htmlFor="cfmPswd">Confirm Password:</label>
@@ -98,7 +98,7 @@ const LoginForm = () => {
             type="password"
             onChange={updateCfmPswd}
           />
-          {errCfmPswd ? <span>{errCfmPswd}</span> : ""}
+          {errCfmPswd ? <span className="errWarning">{errCfmPswd}</span> : ""}
         </div>
       </form>
 
