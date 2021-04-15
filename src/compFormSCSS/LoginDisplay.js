@@ -1,13 +1,13 @@
 import React from "react";
-import "./css/Login.css"
+import "./css/Login.css"    //importing post-scss css
 
 const LoginDisplay = (props) => {
     const {username, email, password, cfmPswd} = props.data;
 
     return (
         <div className="display">
-          <p>Entry Confirmation</p>
           <hr />
+          <p>Entry Confirmation</p>
           <p>Username: {username}</p>
           <p>Email: {email}</p>
           <p>Password: {password}</p>
