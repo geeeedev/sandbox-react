@@ -1,6 +1,8 @@
+//compile scss to css
+//sass sourcePath/sourceFile.scss targetPath/targetFile.css
+
+
 @use "variables" as v;
-
-
 // $greyBlue: rgb(46, 46, 134); //#61dafb;
 // $brown: brown;
 // $centerAlign: center;
@@ -16,5 +18,6 @@ form{
   
 .display{
   color: v.$brown;
+  font-weight: bold;
   text-align: v.$centerAlign;
 }
