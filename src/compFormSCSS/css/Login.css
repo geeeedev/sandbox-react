@@ -1,21 +1,63 @@
 form {
-  text-align: center;
-  align-items: center;
   padding: 20px;
   color: rgba(48, 64, 150, 0.829);
   border: 1px solid rgba(48, 64, 150, 0.829);
   /* outline: 2px dotted blueviolet; */
 }
 
-.display {
-  color: #944a4a;
-  font-weight: bold;
-  text-align: center;
+.flexSideBySide {
+  display: flex;
+  flex-direction: row;
+  outline: 2px dotted red;
+}
+
+.flexRowLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+label {
+  margin: 4px;
+}
+
+.flexRowInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin: 5px;
+}
+
+.inputField {
+  border-color: darkgray;
+  border-radius: 5px;
 }
 
 .errWarning {
   color: red;
   font-size: small;
+}
+
+.display {
+  color: #944a4a;
+  font-weight: bold;
+  margin: 40px;
+  padding: 40px;
+  outline: 2px dotted blueviolet;
+}
+
+.displayEnteredInfo {
+  color: #944a4a;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: underline;
+  outline: 2px dotted blueviolet;
+}
+
+.whereami {
+  outline: 2px dotted red;
 }
 
 /*# sourceMappingURL=Login.css.map */
