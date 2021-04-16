@@ -6,12 +6,12 @@
   outline: 2px dotted palevioletred;
 }
 
-.displayEnteredInfo {
-  color: #944a4a;
+.displayLabel {
+  width: 20%;
+  text-align: right;
   font-weight: bold;
-  text-align: left;
-  text-decoration: underline;
-  outline: 2px dotted blueviolet;
+  color: #944a4a;
+  outline: 2px dotted orange;
 }
 
 .red {

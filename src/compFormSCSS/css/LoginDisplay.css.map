@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/LoginDisplay.scss","../scss/_variables.scss"],"names":[],"mappings":"AAKA;EACE,OCGM;EDFN;EAEA;EACA;EACA,SCQU;;;ADLZ;EACE,OCNM;EDON;EACA,YCNU;EDOV;EACA;;;AAGF;EACE,SCPS;;;ADUX;EACE,SCZW","file":"LoginDisplay.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/LoginDisplay.scss","../scss/_variables.scss"],"names":[],"mappings":"AAKA;EACE,OCGM;EDFN;EAEA;EACA;EACA,SCQU;;;ADLZ;EACI;EACA;EACA;EACA,OCTI;EDYN,SCJY;;;ADOd;EACE,SCTS;;;ADYX;EACE,SCdW","file":"LoginDisplay.css"}
