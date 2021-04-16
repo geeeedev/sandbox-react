@@ -1,0 +1,52 @@
+//compile scss:
+//sass ./src/compFormSCSS/scss/LoginForm.scss ./src/compFormSCSS/css/LoginForm.css --watch
+
+@use "variables" as v;
+
+
+form {
+  // text-align: v.$centerAlign;
+  // align-items: v.$centerAlign;
+  padding: 30px;
+  color: v.$greyBlue;
+  border: 1px solid v.$greyBlue;
+}
+
+.containerLabelInput{
+  display: flex;
+  // flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+label {
+  margin: 5px;
+  width: 15%;
+  text-align: right;
+  // outline: v.$debugGreen;
+}
+
+input{
+  margin: 5px;
+  width: 30%;
+  border-width: 1px;
+  border-color: lightgrey;
+  border-radius: 5px;
+  height: 25px; 
+}
+
+.errWarning {
+  margin: 7px;
+  color: v.$warnRed;
+  font-size: small;
+}
+
+
+
+.red {
+  outline: v.$debugRed;
+}
+
+.green{
+  outline: v.$debugGreen;
+}

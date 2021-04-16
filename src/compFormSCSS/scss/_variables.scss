@@ -5,8 +5,16 @@
 //apply variables in other scss files:
 // color: v.$reactBlueColor;
 
-$redWarning: red;
+$warnRed: red;
 $greyBlue: rgba(48, 64, 150, 0.829); //#61dafb;
 $brown: rgb(148, 74, 74);
 $centerAlign: center;
 $leftAlign: left;
+
+
+//debugging
+$debugGreen: 2px dotted green;
+$debugRed: 2px dotted red;
+$debugOrange: 2px dotted orange;
+$debugBlue: 2px dotted blue;
+$debugPink: 2px dotted palevioletred;

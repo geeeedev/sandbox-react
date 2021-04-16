@@ -1,0 +1,42 @@
+form {
+  padding: 30px;
+  color: rgba(48, 64, 150, 0.829);
+  border: 1px solid rgba(48, 64, 150, 0.829);
+}
+
+.containerLabelInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+label {
+  margin: 5px;
+  width: 15%;
+  text-align: right;
+}
+
+input {
+  margin: 5px;
+  width: 30%;
+  border-width: 1px;
+  border-color: lightgrey;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.errWarning {
+  margin: 7px;
+  color: red;
+  font-size: small;
+}
+
+.red {
+  outline: 2px dotted red;
+}
+
+.green {
+  outline: 2px dotted green;
+}
+
+/*# sourceMappingURL=LoginForm.css.map */

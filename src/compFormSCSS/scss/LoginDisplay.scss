@@ -1,0 +1,29 @@
+//compile scss:
+//sass ./src/compFormSCSS/scss/LoginDisplay.scss ./src/compFormSCSS/css/LoginDisplay.css --watch
+
+@use "variables" as v;
+
+.display {
+  color: v.$brown;
+  font-weight: bold;
+  // align-items: v.$centerAlign;
+  margin: 40px;
+  padding: 40px;
+  outline: v.$debugPink;
+}
+
+.displayEnteredInfo {
+  color: v.$brown;
+  font-weight: bold;
+  text-align: v.$leftAlign;
+  text-decoration: underline;
+  outline: 2px dotted blueviolet;
+}
+
+.red {
+  outline: v.$debugRed;
+}
+
+.green {
+  outline: v.$debugGreen;
+}

@@ -1,0 +1,25 @@
+.display {
+  color: #944a4a;
+  font-weight: bold;
+  margin: 40px;
+  padding: 40px;
+  outline: 2px dotted palevioletred;
+}
+
+.displayEnteredInfo {
+  color: #944a4a;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: underline;
+  outline: 2px dotted blueviolet;
+}
+
+.red {
+  outline: 2px dotted red;
+}
+
+.green {
+  outline: 2px dotted green;
+}
+
+/*# sourceMappingURL=LoginDisplay.css.map */
