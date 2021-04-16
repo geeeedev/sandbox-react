@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LoginDisplay from "./LoginDisplay";
-import "./css/Login.css"    //importing post-scss css
+import "./css/Login.css"; //importing post-scss css
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -59,46 +59,48 @@ const LoginForm = () => {
   return (
     <>
       <form>
-        <div>
-          <label htmlFor="username">User Name:</label>
-          <input
-            id="username"
-            name="username"
-            type="text"
-            // onChange={(e)=>setUsername(e.target.value)}
-            onChange={updateUsername}
-          />
-          {errUsername ? <span className="errWarning">{errUsername}</span> : ""}
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            onChange={(e) => updateEmail(e)}
-          />
-          {errEmail ? <span className="errWarning">{errEmail}</span> : ""}
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            onChange={updatePassword}
-          />
-          {errPassword ? <span className="errWarning">{errPassword}</span> : ""}
-        </div>
-        <div>
-          <label htmlFor="cfmPswd">Confirm Password:</label>
-          <input
-            id="cfmPswd"
-            name="cfmPswd"
-            type="password"
-            onChange={updateCfmPswd}
-          />
-          {errCfmPswd ? <span className="errWarning">{errCfmPswd}</span> : ""}
+        <div className="flexSideBySide">
+          <div className="flexRowLabel">
+            <label htmlFor="username">User Name: </label>
+            <label htmlFor="email">Email: </label>
+            <label htmlFor="password">Password: </label>
+            <label htmlFor="cfmPswd">Confirm Password: </label>
+          </div>
+          <div className="flexRowInput">
+            <input
+              id="username"
+              name="username"
+              type="text"
+              // onChange={(e)=>setUsername(e.target.value)}
+              onChange={updateUsername}
+              className="inputField"
+            />
+            {errUsername ? <p className="errWarning">{errUsername}</p> : ""}
+            <input
+              id="email"
+              name="email"
+              type="email"
+              onChange={(e) => updateEmail(e)}
+              className="inputField"
+            />
+            {errEmail ? <p className="errWarning">{errEmail}</p> : ""}
+            <input
+              id="password"
+              name="password"
+              type="password"
+              onChange={updatePassword}
+              className="inputField"
+            />
+            {errPassword ? <p className="errWarning">{errPassword}</p> : ""}
+            <input
+              id="cfmPswd"
+              name="cfmPswd"
+              type="password"
+              onChange={updateCfmPswd}
+              className="inputField"
+            />
+            {errCfmPswd ? <p className="errWarning">{errCfmPswd}</p> : ""}
+          </div>
         </div>
       </form>
 
