@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LoginDisplay from "./LoginDisplay";
-import "./css/Login.css"; //importing post-scss css
+import "./css/LoginForm.css"; //importing post-scss css
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -59,48 +59,49 @@ const LoginForm = () => {
   return (
     <>
       <form>
-        <div className="flexSideBySide">
-          <div className="flexRowLabel">
-            <label htmlFor="username">User Name: </label>
-            <label htmlFor="email">Email: </label>
-            <label htmlFor="password">Password: </label>
-            <label htmlFor="cfmPswd">Confirm Password: </label>
-          </div>
-          <div className="flexRowInput">
-            <input
-              id="username"
-              name="username"
-              type="text"
-              // onChange={(e)=>setUsername(e.target.value)}
-              onChange={updateUsername}
-              className="inputField"
+        <div className="containerLabelInput  ">
+          <label htmlFor="username">User Name: </label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            // onChange={(e)=>setUsername(e.target.value)}
+            onChange={updateUsername}
             />
             {errUsername ? <p className="errWarning">{errUsername}</p> : ""}
-            <input
-              id="email"
-              name="email"
-              type="email"
-              onChange={(e) => updateEmail(e)}
-              className="inputField"
-            />
-            {errEmail ? <p className="errWarning">{errEmail}</p> : ""}
-            <input
-              id="password"
-              name="password"
-              type="password"
-              onChange={updatePassword}
-              className="inputField"
-            />
-            {errPassword ? <p className="errWarning">{errPassword}</p> : ""}
-            <input
-              id="cfmPswd"
-              name="cfmPswd"
-              type="password"
-              onChange={updateCfmPswd}
-              className="inputField"
-            />
-            {errCfmPswd ? <p className="errWarning">{errCfmPswd}</p> : ""}
-          </div>
+        </div>
+
+        <div className="containerLabelInput">
+          <label htmlFor="email">Email: </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={(e) => updateEmail(e)}
+          />
+          {errEmail ? <p className="errWarning">{errEmail}</p> : ""}
+        </div>
+
+        <div className="containerLabelInput">
+          <label htmlFor="password">Password: </label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            onChange={updatePassword}
+          />
+          {errPassword ? <p className="errWarning">{errPassword}</p> : ""}
+        </div>
+
+        <div className="containerLabelInput">
+          <label htmlFor="cfmPswd">Confirm Password: </label>
+          <input
+            id="cfmPswd"
+            name="cfmPswd"
+            type="password"
+            onChange={updateCfmPswd}
+          />
+          {errCfmPswd ? <p className="errWarning">{errCfmPswd}</p> : ""}
         </div>
       </form>
 
