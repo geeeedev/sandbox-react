@@ -1,15 +1,16 @@
 //compile scss:
 //sass ./src/compFormSCSS/scss/LoginDisplay.scss ./src/compFormSCSS/css/LoginDisplay.css --watch
 
+// @use "variables";  call it by variables.$brown if not using `as v`
 @use "variables" as v;
 
 .display {
+  // margin: 40px;
+  margin: 10px;
+  padding: 30px;
   color: v.$brown;
   font-weight: bold;
-  // align-items: v.$centerAlign;
-  margin: 40px;
-  padding: 40px;
-  outline: v.$debugPink;
+  outline: v.$debug-pink;
 }
 
 .displayLabel {
@@ -19,13 +20,15 @@
     color: v.$brown;
     // text-align: v.$leftAlign;
 //   text-decoration: underline;
-  outline: v.$debugOrange;
+  outline: v.$debug-orange;
 }
 
 .red {
-  outline: v.$debugRed;
+  outline: v.$debug-red;
 }
 
-.green {
-  outline: v.$debugGreen;
+.green{
+  outline: v.$debug-green;
 }
+
+//delete this - no longer needed
