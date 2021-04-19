@@ -1,6 +1,6 @@
 import React from "react";
-import "./css/LoginDisplay.css"; //importing post-scss css
-import "./css/LoginForm.css";
+import "./css/LoginForm.css"; //importing post-scss css
+// import "./css/LoginDisplay.css"; 
 
 const LoginDisplay = (props) => {
   const { username, email, password, cfmPswd } = props.data;
@@ -10,20 +10,24 @@ const LoginDisplay = (props) => {
       <div className="display">
         <p>Entry Confirmation</p>
         <hr />
-        <div className="containerLabelInput">
-          <label className="displayLabel">Username: </label> {username}
+        <div className="container-label-data">
+          <label className="display-label">Username: </label> 
+          <label className="display-data"> {username} </label>
         </div>
 
-        <div className="containerLabelInput">
-          <label className="displayLabel">Email: </label> {email}
+        <div className="container-label-data">
+          <label className="display-label">Email: </label> 
+          <label className="display-data"> {email} </label>
         </div>
 
-        <div className="containerLabelInput">
-          <label className="displayLabel">Password: </label> {password}
+        <div className="container-label-data">
+          <label className="display-label">Password: </label> 
+          <label className="display-data"> {password} </label>
         </div>
 
-        <div className="containerLabelInput">
-          <label className="displayLabel">Password Confirmation: </label> {cfmPswd}
+        <div className="container-label-data">
+          <label className="display-label">Password Confirmation: </label> 
+          <label className="display-data"> {cfmPswd} </label>
         </div>
       </div>
     </>
