@@ -1,18 +1,25 @@
 //compile scss:
-//sass ./src/compFormSCSS/scss/LoginForm.scss ./src/compFormSCSS/css/LoginForm.css --watch
+//sass ./src/compFormSCSS/scss/LoginForm-Display.scss ./src/compFormSCSS/css/LoginForm-Display.css --watch
 
 @use "variables" as v;
 
+// LoginForm
+%theme {
+  margin: 10px;
+  padding: 30px;
+}
 
 form {
   // text-align: v.$centerAlign;
   // align-items: v.$centerAlign;
-  padding: 30px;
-  color: v.$greyBlue;
-  border: 1px solid v.$greyBlue;
+  @extend %theme;
+  // margin: 10px;
+  // padding: 30px;
+  color: v.$grey-blue;
+  border: 1px solid v.$grey-blue;
 }
 
-.containerLabelInput{
+.container-label-input {
   display: flex;
   // flex-direction: column;
   flex-direction: row;
@@ -23,30 +30,57 @@ label {
   margin: 5px;
   width: 15%;
   text-align: right;
-  // outline: v.$debugGreen;
 }
 
-input{
+input {
   margin: 5px;
   width: 30%;
   border-width: 1px;
   border-color: lightgrey;
   border-radius: 5px;
-  height: 25px; 
+  height: 25px;
 }
 
-.errWarning {
+.err-warning {
   margin: 7px;
-  color: v.$warnRed;
+  color: v.$warn-red;
   font-size: small;
 }
 
 
 
-.red {
-  outline: v.$debugRed;
+//LoginDisplay
+.display {
+  @extend %theme;
+  // margin: 10px;
+  // padding: 30px;
+  color: v.$brown;
+  font-weight: bold;
+  outline: v.$debug-pink;
 }
 
-.green{
-  outline: v.$debugGreen;
+.container-label-data {
+  @extend .container-label-input;
+}
+
+.display-label {
+  @extend label;
+  font-weight: bold;
+  color: v.$brown;
+  //   text-decoration: underline;
+  // outline: v.$debug-orange;
+}
+
+.display-data{
+  @extend label;
+  text-align: left;
+}
+
+//debugging
+.red {
+  outline: v.$debug-red;
+}
+
+.green {
+  outline: v.$debug-green;
 }
