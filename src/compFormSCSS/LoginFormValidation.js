@@ -59,7 +59,7 @@ const LoginForm = () => {
   return (
     <>
       <form>
-        <div className="containerLabelInput  ">
+        <div className=".container-label-input  ">
           <label htmlFor="username">User Name: </label>
           <input
             id="username"
@@ -68,10 +68,10 @@ const LoginForm = () => {
             // onChange={(e)=>setUsername(e.target.value)}
             onChange={updateUsername}
             />
-            {errUsername ? <p className="errWarning">{errUsername}</p> : ""}
+            {errUsername ? <p className="err-warning">{errUsername}</p> : ""}
         </div>
 
-        <div className="containerLabelInput">
+        <div className=".container-label-input">
           <label htmlFor="email">Email: </label>
           <input
             id="email"
@@ -79,10 +79,10 @@ const LoginForm = () => {
             type="email"
             onChange={(e) => updateEmail(e)}
           />
-          {errEmail ? <p className="errWarning">{errEmail}</p> : ""}
+          {errEmail ? <p className="err-warning">{errEmail}</p> : ""}
         </div>
 
-        <div className="containerLabelInput">
+        <div className=".container-label-input">
           <label htmlFor="password">Password: </label>
           <input
             id="password"
@@ -90,10 +90,10 @@ const LoginForm = () => {
             type="password"
             onChange={updatePassword}
           />
-          {errPassword ? <p className="errWarning">{errPassword}</p> : ""}
+          {errPassword ? <p className="err-warning">{errPassword}</p> : ""}
         </div>
 
-        <div className="containerLabelInput">
+        <div className=".container-label-input">
           <label htmlFor="cfmPswd">Confirm Password: </label>
           <input
             id="cfmPswd"
@@ -101,7 +101,7 @@ const LoginForm = () => {
             type="password"
             onChange={updateCfmPswd}
           />
-          {errCfmPswd ? <p className="errWarning">{errCfmPswd}</p> : ""}
+          {errCfmPswd ? <p className="err-warning">{errCfmPswd}</p> : ""}
         </div>
       </form>
 
