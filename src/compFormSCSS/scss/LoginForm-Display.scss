@@ -5,7 +5,7 @@
 
 // LoginForm
 %theme {
-  margin: 10px;
+  margin: 50px;
   padding: 30px;
 }
 
@@ -13,15 +13,14 @@ form {
   // text-align: v.$centerAlign;
   // align-items: v.$centerAlign;
   @extend %theme;
-  // margin: 10px;
+  // margin: 50px;
   // padding: 30px;
   color: v.$grey-blue;
-  border: 1px solid v.$grey-blue;
+  border: 2px ridge v.$grey-blue;
 }
 
 .container-label-input {
   display: flex;
-  // flex-direction: column;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -30,24 +29,33 @@ label {
   margin: 5px;
   width: 15%;
   text-align: right;
+  // @extend .green;
+}
+
+.container-input-err{
+  // use inline-flex, not flex
+  display: inline-flex;  
+  width: 70%;
+  flex-direction: column;
+  align-items: flex-start;
+  // @extend .red;
 }
 
 input {
   margin: 5px;
-  width: 30%;
-  border-width: 1px;
-  border-color: lightgrey;
+  width: 40%;
+  border-width: 2px;
+  border-color: grey;
   border-radius: 5px;
   height: 25px;
 }
 
 p {
-  margin-left: 100px;
+  margin-left: 170px;
 }
 
 .err-warning {
-  margin: 7px;
-  margin-left: 260px;
+  margin: 5px;
   color: v.$warn-red;
   font-size: small;
 }
@@ -61,7 +69,7 @@ p {
   // padding: 30px;
   color: v.$brown;
   font-weight: bold;
-  outline: v.$debug-pink;
+  @extend .pink;
 }
 
 .container-label-data {
@@ -88,4 +96,8 @@ p {
 
 .green {
   outline: v.$debug-green;
+}
+
+.pink{
+  outline: v.$debug-pink;
 }
