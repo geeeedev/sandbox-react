@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LoginDisplay from "./LoginDisplay";
-import "./css/LoginForm.css"; //importing post-scss css
+import "./css/LoginForm-Display.css"; //importing post-scss css
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
