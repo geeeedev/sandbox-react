@@ -1,11 +1,11 @@
 .display, form {
-  margin: 10px;
+  margin: 50px;
   padding: 30px;
 }
 
 form {
   color: rgba(48, 64, 150, 0.829);
-  border: 1px solid rgba(48, 64, 150, 0.829);
+  border: 2px ridge rgba(48, 64, 150, 0.829);
 }
 
 .container-label-input, .container-label-data {
@@ -20,22 +20,28 @@ label, .display-data, .display-label {
   text-align: right;
 }
 
+.container-input-err {
+  display: inline-flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 input {
   margin: 5px;
-  width: 30%;
-  border-width: 1px;
-  border-color: lightgrey;
+  width: 40%;
+  border-width: 2px;
+  border-color: grey;
   border-radius: 5px;
   height: 25px;
 }
 
 p {
-  margin-left: 100px;
+  margin-left: 170px;
 }
 
 .err-warning {
-  margin: 7px;
-  margin-left: 260px;
+  margin: 5px;
   color: red;
   font-size: small;
 }
@@ -43,7 +49,6 @@ p {
 .display {
   color: #944a4a;
   font-weight: bold;
-  outline: 2px dotted palevioletred;
 }
 
 .display-label {
@@ -61,6 +66,10 @@ p {
 
 .green {
   outline: 2px dotted green;
+}
+
+.pink, .display {
+  outline: 2px dotted palevioletred;
 }
 
 /*# sourceMappingURL=LoginForm-Display.css.map */
