@@ -113,6 +113,7 @@ const LoginForm = () => {
         </div>
       </form>
 
+      {/* <LoginDisplay username={username} email={email} password={password} cfmPswd={cfmPswd}/> */}
       <LoginDisplay data={newLogin} />
     </>
   );
