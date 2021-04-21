@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/LoginForm.css"; //importing post-scss css
+import "./css/LoginForm-Display.css"; //importing post-scss css
 // import "./css/LoginDisplay.css"; 
 
 const LoginDisplay = (props) => {
