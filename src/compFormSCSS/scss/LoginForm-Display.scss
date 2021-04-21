@@ -10,8 +10,6 @@
 }
 
 form {
-  // text-align: v.$centerAlign;
-  // align-items: v.$centerAlign;
   @extend %theme;
   // margin: 50px;
   // padding: 30px;
@@ -32,18 +30,17 @@ label {
   // @extend .green;
 }
 
-.container-input-err{
-  // use inline-flex, not flex
-  display: inline-flex;  
-  width: 70%;
+.container-input-err {
+  display: inline-flex; //use inline-flex, not flex for the 2nd flex container
   flex-direction: column;
   align-items: flex-start;
+  // width: 60%;  //*need this if prefer input box bigger
   // @extend .red;
 }
 
 input {
+  // width: 40%;  //*need this (and above witdth) if prefer input box bigger
   margin: 5px;
-  width: 40%;
   border-width: 2px;
   border-color: grey;
   border-radius: 5px;
@@ -59,8 +56,6 @@ p {
   color: v.$warn-red;
   font-size: small;
 }
-
-
 
 //LoginDisplay
 .display {
@@ -80,11 +75,11 @@ p {
   @extend label;
   font-weight: bold;
   color: v.$brown;
-  //   text-decoration: underline;
+  // text-decoration: underline;
   // outline: v.$debug-orange;
 }
 
-.display-data{
+.display-data {
   @extend label;
   text-align: left;
 }
@@ -98,6 +93,6 @@ p {
   outline: v.$debug-green;
 }
 
-.pink{
+.pink {
   outline: v.$debug-pink;
 }
