@@ -61,47 +61,55 @@ const LoginForm = () => {
       <form>
         <div className=".container-label-input ">
           <label htmlFor="username">User Name: </label>
-          <input
-            id="username"
-            name="username"
-            type="text"
-            // onChange={(e)=>setUsername(e.target.value)}
-            onChange={updateUsername}
+          <div className="container-input-err">
+            <input
+              id="username"
+              name="username"
+              type="text"
+              // onChange={(e)=>setUsername(e.target.value)}
+              onChange={updateUsername}
             />
             {errUsername ? <p className="err-warning">{errUsername}</p> : ""}
+          </div>
         </div>
 
-        <div className=".container-label-input">
+        <div className=".container-label-input ">
           <label htmlFor="email">Email: </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            onChange={(e) => updateEmail(e)}
-          />
-          {errEmail ? <p className="err-warning">{errEmail}</p> : ""}
+          <div className="container-input-err">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              onChange={(e) => updateEmail(e)}
+            />
+            {errEmail ? <p className="err-warning">{errEmail}</p> : ""}
+          </div>
         </div>
 
         <div className=".container-label-input">
           <label htmlFor="password">Password: </label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            onChange={updatePassword}
-          />
-          {errPassword ? <p className="err-warning">{errPassword}</p> : ""}
+          <div className="container-input-err">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              onChange={updatePassword}
+            />
+            {errPassword ? <p className="err-warning">{errPassword}</p> : ""}
+          </div>
         </div>
 
         <div className=".container-label-input">
           <label htmlFor="cfmPswd">Confirm Password: </label>
-          <input
-            id="cfmPswd"
-            name="cfmPswd"
-            type="password"
-            onChange={updateCfmPswd}
-          />
-          {errCfmPswd ? <p className="err-warning">{errCfmPswd}</p> : ""}
+          <div className="container-input-err">
+            <input
+              id="cfmPswd"
+              name="cfmPswd"
+              type="password"
+              onChange={updateCfmPswd}
+            />
+            {errCfmPswd ? <p className="err-warning">{errCfmPswd}</p> : ""}
+          </div>
         </div>
       </form>
 
