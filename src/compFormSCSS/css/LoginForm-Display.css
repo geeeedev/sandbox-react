@@ -29,8 +29,13 @@ input {
   height: 25px;
 }
 
+p {
+  margin-left: 100px;
+}
+
 .err-warning {
   margin: 7px;
+  margin-left: 260px;
   color: red;
   font-size: small;
 }
