@@ -2,8 +2,9 @@ import React from "react";
 import "./css/LoginForm-Display.css"; //importing post-scss css
 // import "./css/LoginDisplay.css"; 
 
-const LoginDisplay = (props) => {
-  const { username, email, password, cfmPswd } = props.data;
+const LoginDisplay = ({username, email, password, cfmPswd}) => {
+  // const LoginDisplay = (props) => {
+  // const { username, email, password, cfmPswd } = props.data;
 
   return (
     <>
