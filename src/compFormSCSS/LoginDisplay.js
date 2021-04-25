@@ -2,7 +2,7 @@ import React from "react";
 import "./css/LoginForm-Display.css"; //importing post-scss css
 // import "./css/LoginDisplay.css"; 
 
-  //** Remember: can only destructure what was stuffed in the component
+  //** Remember: can only destructure what was `stuffed` in the component
   // const LoginDisplay = ({username, email, password, cfmPswd}) => {     //this only works if elements are broken up and NOT pkgd in obj data
   // const LoginDisplay = ({data}) => {     //NOT efficient if doing {data.username} - better to destructure all first like below
     // const { username, email, password, cfmPswd } = data;    //better than {data.username} but same as destructuring props like below
